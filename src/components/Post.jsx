@@ -1,4 +1,4 @@
-import styles from './Post.module.css'
+import styles from './Post.module.css';
 
 export function Post(props) {
   return (
@@ -7,7 +7,7 @@ export function Post(props) {
         <div className={styles.author}>
           <img
             className={styles.avatar}
-            src="https://pbs.twimg.com/profile_images/3025501692/dba138ca4b35fe8559011dfc42f5bd7a_400x400.jpeg"
+            src="https://yt3.ggpht.com/yti/AHXOFjW8pT6Eo33c0DAjJ3dm7uAjXfk7psCPBry8sraelpo=s88-c-k-c0x00ffffff-no-rj-mo"
             alt="profile"
           />
           <div className={styles.authorInfo}>
@@ -16,8 +16,27 @@ export function Post(props) {
           </div>
         </div>
 
-        <time dateTime='2023-02-23'>Públicado há 1h</time>
+        <time dateTime="2023-02-23">Públicado há 1h</time>
       </header>
+
+      <div className={styles.content}>
+        <p>Fala galeraa 👋</p>
+
+        <p>
+          Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
+          no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀
+        </p>
+
+        <p>
+          <a href="#">jane.design/doctorcare</a>
+        </p>
+
+        <p>
+          <a href="#">#novoprojeto</a>
+          {''} <a href="#">#nlw</a> {'  '}
+          <a href="#">#rocketseat</a>
+        </p>
+      </div>
     </article>
-  )
+  );
 }
