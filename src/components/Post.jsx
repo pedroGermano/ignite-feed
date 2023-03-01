@@ -7,7 +7,7 @@ export function Post(props) {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <Avatar src="https://github.com/maykbrito.png" />
+          <Avatar hasBorder={true} src="https://github.com/maykbrito.png" />
           <div className={styles.authorInfo}>
             <strong>Pedro Germano</strong>
             <span>Frontend | Developer</span>
