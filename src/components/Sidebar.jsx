@@ -14,7 +14,7 @@ export function Sidebar() {
       <div className={styles.profile}>
         <Avatar
           hasBorder={true}
-          src="https://yt3.ggpht.com/yti/AHXOFjW8pT6Eo33c0DAjJ3dm7uAjXfk7psCPBry8sraelpo=s88-c-k-c0x00ffffff-no-rj-mo"
+          src="https://xesque.rocketseat.dev/users/avatar/profile-9232733e-2c34-4200-bcf6-6639d542964d-1628693755984.jpg"
         />
 
         <strong>Pedro Germano</strong>
