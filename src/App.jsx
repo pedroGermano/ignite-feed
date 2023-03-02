@@ -1,31 +1,48 @@
 import { Header } from './components/Header';
 import { Post } from './components/Post';
+import { Sidebar } from './components/Sidebar';
 
 import styles from './App.module.css';
-import { Sidebar } from './components/Sidebar';
 import './global.css';
 
-const post = [
+const posts = [
   {
     id: 1,
     author: {
-      avatar: {
-        avatarUrl: 'https://github.com/diego3g.png',
-        name: 'Diego Fernandes',
-        role: 'CTO @ Rocketseat',
-      },
-      content: [
-        { type: 'paragraph', content: 'Fala galeraa 👋' },
-        {
-          type: 'paragraph',
-          content:
-            'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀,',
-        },
-        { type: 'link', content: '<a href="#">#novoprojeto</a>' },
-        { type: 'link', content: '<a href="#">#nlw</a>' },
-        { type: 'link', content: '<a href="#">#rocketseat</a>' },
-      ],
+      avatarUrl: 'https://github.com/diego3g.png',
+      name: 'Diego Fernandes',
+      role: 'CTO @Rocketseat',
     },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      {
+        type: 'paragraph',
+        content:
+          'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀,',
+      },
+      { type: 'link', content: '<a href="#">#novoprojeto</a>' },
+    ],
+    publishedAt: new Date('2023-01-03 20:00:00'),
+  },
+
+  {
+    id: 2,
+    author: {
+      avatarUrl:
+        'https://media.licdn.com/dms/image/C4D03AQEcMwXIKTxTSA/profile-displayphoto-shrink_800_800/0/1606010522125?e=1683158400&v=beta&t=ZJMJe2l5YbbsQTF_cO23XR4BP10t-5yrx0i8gLzih_8',
+      name: 'Pedro Germano',
+      role: 'Frontend Developer',
+    },
+    content: [
+      { type: 'paragraph', content: 'Fala galeraa 👋' },
+      {
+        type: 'paragraph',
+        content:
+          'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀,',
+      },
+      { type: 'link', content: '<a href="#">#novoprojeto</a>' },
+    ],
+    publishedAt: new Date('2023-01-03 15:00:00'),
   },
 ];
 
@@ -38,9 +55,16 @@ export function App() {
         <Sidebar />
 
         <main>
-          <Post author="Pedro Geramano" content="Frontend Developer" />
-
-          <Post author="Tiago Alves" content="Design UI" />
+          {posts.map((post) => {
+            return (
+              <Post
+                key={post.id}
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            );
+          })}
         </main>
       </div>
     </>
