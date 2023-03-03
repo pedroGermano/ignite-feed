@@ -19,6 +19,7 @@ export function Post({ author, publishedAt }) {
 
       <div className={styles.content}>
         <p>Fala galeraa 👋</p>
+        <p>Fala galeraa 👋</p>
 
         <p>
           Acabei de subir mais um projeto no meu portifa. É um projeto que fiz
