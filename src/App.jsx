@@ -28,8 +28,7 @@ const posts = [
   {
     id: 2,
     author: {
-      avatarUrl:
-        'https://media.licdn.com/dms/image/C4D03AQEcMwXIKTxTSA/profile-displayphoto-shrink_800_800/0/1606010522125?e=1683158400&v=beta&t=ZJMJe2l5YbbsQTF_cO23XR4BP10t-5yrx0i8gLzih_8',
+      avatarUrl: 'https://github.com/pedroGermano.png',
       name: 'Pedro Germano',
       role: 'Frontend Developer',
     },
