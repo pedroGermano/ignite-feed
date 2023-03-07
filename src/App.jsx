@@ -20,7 +20,7 @@ const posts = [
         content:
           'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀,',
       },
-      { type: 'link', content: '<a href="#">#novoprojeto</a>' },
+      { type: 'link', content: '#novoprojeto' },
     ],
     publishedAt: new Date('2023-01-03 20:00:00'),
   },
@@ -39,7 +39,7 @@ const posts = [
         content:
           'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀,',
       },
-      { type: 'link', content: '<a href="#">#novoprojeto</a>' },
+      { type: 'link', content: '#novoprojeto' },
     ],
     publishedAt: new Date('2023-01-03 15:00:00'),
   },
