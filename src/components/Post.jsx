@@ -1,5 +1,6 @@
 import { format, formatDistanceToNow } from 'date-fns';
 import ptBr from 'date-fns/locale/pt-BR';
+
 import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 
@@ -20,6 +21,7 @@ export function Post({ author, publishedAt, content }) {
   function handleCreateNewComment(e) {
     e.preventDefault();
 
+    comments.push(3);
     comments.push(3);
 
     console.log(comments);
