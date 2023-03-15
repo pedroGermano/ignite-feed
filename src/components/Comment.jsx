@@ -21,6 +21,7 @@ export function Comment({ content, onDeleteComment }) {
 
             <button onClick={handleDeleteComment} title="Deletar">
               <Trash size={24} />
+              <Trash size={24} />
             </button>
           </header>
 
