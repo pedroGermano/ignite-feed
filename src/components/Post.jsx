@@ -33,7 +33,7 @@ export function Post({ author, publishedAt, content }) {
   }
 
   function deleteComment(comment) {
-    console.log(`Deletar comentário ${comment}`);
+    setComments();
   }
 
   return (
